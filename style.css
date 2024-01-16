@@ -1,0 +1,297 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+body{
+    background-color: #08070B;
+    height: 100vh;
+    font-family: 'JetBrains Mono';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21.12px;
+    color: #817D92;
+    text-align: center;
+    padding-top:50px;
+}
+
+.password-div{
+    width:343px;
+    height:64px;
+    background-color: #24232c;
+    padding:0 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    margin-top:20px;
+   
+}
+
+.password-div p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.68px;
+    color:#e6e5ea;
+    width:144px;
+    height:32px;
+}
+
+.password-div img{
+    width:17.5px;
+    height:20px;
+}
+
+.container{
+    width:343px;
+    height:423px;
+    background-color:#24232c;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h3{
+    width:154px;
+    height:21px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21.12px;
+    color:#e6e5ea;
+}
+
+.character-count{
+    display: flex;
+    justify-content: space-between;
+    height:31px;
+    align-items: center;
+    
+}
+
+#number{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.68px;
+    color:#a4ffaf;
+}
+
+#slider{
+    width:323px;
+    height:8px;
+    cursor: pointer;
+    margin-top:25px;
+   
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 311px; 
+    height: 8px;
+    background: #a4ffaf; 
+    border-radius: 5px; 
+    outline: none; 
+    
+  }
+
+  
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styles on WebKit browsers */
+    width: 28px; /* Set a fixed width for the thumb */
+    height: 28px; /* Set a fixed height for the thumb */
+    background: #e6e5ea; /* Thumb color */
+    border-radius: 50%; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+
+  .validation-box{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  label{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.12px;
+    color: #e6e5ea;
+    margin-top: 2px;
+  }
+
+  input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    vertical-align: middle;
+    width:20px;
+    height:21px;
+    border:1px solid #a4ffaf;
+    outline: none;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: #a4ffaf;
+   
+  }
+
+  .password-strength{
+    width:311px;
+    height:56px;
+    display: flex;
+    margin-top: 30px;
+    background-color: #18171f;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .password-strength p{
+    width:77px;
+    height:21px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #817D92;
+    padding-left: 10px;
+  }
+
+  h4{
+    font-size: 18px;
+    color: #e6e5ea;
+    padding-left: 70px;
+  }
+
+  .rectangle div {
+    width:10px;
+    height:28px;
+    background-color: #F8cd65;
+    border: 1px solid #e6e5ea;
+  }
+
+  .rectangle{
+    display: flex;
+    width:70px;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+  .generate-button{
+    width:311px;
+    height:56px;
+    background-color: #a4ffaf;
+    margin-top: 10px;
+    border-style: none;
+    cursor: pointer;
+  }
+
+  .generate-button p{
+    color:#24232c;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+  .generate-button p, img{
+    display: inline;
+    vertical-align: middle;
+  }
+
+  @media screen and (min-width:768px){
+    .password-div{
+        width:540px;
+        height:80px;
+    }
+
+    .container{
+        width:540px;
+        height:528px;
+        padding:20px;
+        
+        
+    }
+
+    #password{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .password-div img{
+        width:21px;
+        height:24px;
+    }
+    h3{
+        font-size: 18px;
+        line-height: 23px;
+        width:173px;
+    }
+
+    #number{
+        font-size: 32px;
+        line-height: 42px;
+        width:39px;
+        height:42px;
+    }
+    #slider{
+        width:476px;
+        height:8px;
+    }
+    .slider{
+        margin-top: 10px;
+    }
+
+    .validation-box{
+        margin-top: 40px;
+    }
+
+    label{
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .password-strength{
+        width:476px;
+        height: 72px;
+        margin-top: 50px;
+        margin:40px auto 0 auto;
+    }
+
+    h4{
+        padding-left: 230px;
+    }
+
+    .password-strength p{
+        font-size: 18px;
+    }
+
+    .button-div{
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .generate-button{
+        width:476px;
+        height: 65px;
+        margin-top: 30px;
+    }
+  }
+
+  
+
+
+
+
+

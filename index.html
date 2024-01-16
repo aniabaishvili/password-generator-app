@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Password Generator app</title>
+</head>
+<body>
+    <header>
+        <h2>Password Generator</h2>
+    </header>
+
+    <section>
+        <div class="password-div">
+            <p id="password">PTx1f5DaFX</p>
+            <img src="./starter-code/assets/images/icon-copy.svg">
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="character-count">
+            <h3>Character Length</h3>
+            <p id="number">10</p>
+        </div>
+        <div class="slider">
+            <input id="slider" type="range" min="1" value="10" max="15" step="1">
+          </div>
+          <div class="validation-box">
+            <div>
+            <input type="checkbox" name="option1" id="uppercase">
+            <label for="uppercase" >Include Uppercase Letters</label>
+            </div>
+            <div>
+            <input type="checkbox" name="option2" id="lowercase">
+            <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div>
+            <input type="checkbox" name="option3" id="numbers-include">
+            <label for="numbers-include" >Include Numbers</label>
+            </div>
+            <div>
+            <input type="checkbox" name="option4" id="symbols">
+            <label for="symbols">Include Symbols</label>
+            </div>
+          </div>
+
+
+          <div class="password-strength">
+            <p>STRENGTH</p>
+            <h4>MEDIUM</h4>
+            <div class="rectangle">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+          </div>
+
+         <div class="button-div">
+            <button onclick="passwordGenerator()" class="generate-button">
+                <p>GENERATE</p>
+                <img src="./starter-code/assets/images/icon-arrow-right.svg">
+            </button>
+        </div>
+          
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
