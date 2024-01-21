@@ -21,8 +21,13 @@ function passwordGenerator(){
     if(symbols.checked){
         characterSet += "!@#$%^&*()_-+={[}]|\\;:\"'<,>.?/"
     }
+
+    let randomPassword = "";
     
     for(let i =0; i < slider.value; i ++){
         const randomIndex = Math.floor(Math.random()* characterSet.length);
+        randomPassword += characterSet[randomIndex];
     }
+
+    password.innerText =randomPassword;
 }
