@@ -17,7 +17,7 @@
     <section>
         <div class="password-div">
             <p id="password">PTx1f5DaFX</p>
-            <img src="./starter-code/assets/images/icon-copy.svg">
+            <img onclick="copyPassword()" class="copy"src="./starter-code/assets/images/icon-copy.svg">
         </div>
     </section>
 
@@ -27,11 +27,11 @@
             <p id="number">10</p>
         </div>
         <div class="slider">
-            <input id="slider" type="range" min="1" value="10" max="15" step="1">
+            <input  onchange="updateNumber()" id="slider" type="range" min="1" value="10" max="15" step="1">
           </div>
           <div class="validation-box">
             <div>
-            <input type="checkbox" name="option1" id="uppercase">
+            <input  type="checkbox" name="option1" id="uppercase">
             <label for="uppercase" >Include Uppercase Letters</label>
             </div>
             <div>
@@ -51,12 +51,12 @@
 
           <div class="password-strength">
             <p>STRENGTH</p>
-            <h4>MEDIUM</h4>
+            <h4 id="password-strength-text">MEDIUM</h4>
             <div class="rectangle">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
             </div>
           </div>
 
