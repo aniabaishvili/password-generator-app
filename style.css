@@ -43,7 +43,6 @@ section{
     font-size: 24px;
     line-height: 31.68px;
     color:#e6e5ea;
-    /* width:144px; */
     height:32px;
 }
 
@@ -59,7 +58,6 @@ section{
     background-color:#24232c;
     margin-top: 20px;
     padding: 10px;
-   
 }
 
 h3{
@@ -76,7 +74,6 @@ h3{
     justify-content: space-between;
     height:31px;
     align-items: center;
-    
 }
 
 #number{
@@ -92,11 +89,7 @@ h3{
     cursor: pointer;
     margin-top:25px;
     accent-color: #A4FFAF;
-    
 }
-
-
-
 
    input[type="range"]::-webkit-slider-thumb{
     width: 28px; 
@@ -104,8 +97,6 @@ h3{
     background: #e6e5ea; 
     border-radius: 50%;   
     cursor: pointer;   
-   
-
   }
 
 
@@ -153,7 +144,6 @@ h3{
     background-color: #18171f;
     align-items: center;
     justify-content: space-between;
-    
   }
 
   .password-strength p{
@@ -231,8 +221,6 @@ h3{
         width:540px;
         height:528px;
         padding:20px;
-        
-        
     }
 
     #password{
@@ -293,8 +281,6 @@ h3{
         justify-content: center;
         align-items: center;
     }
-
-
 
     .generate-button{
         width:476px;
